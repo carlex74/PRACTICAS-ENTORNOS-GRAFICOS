@@ -35,6 +35,13 @@ if(mysqli_num_rows($resul) == 0) {
     
 
    }
+
+
+   // Liberar conjunto de resultados
+mysqli_free_result($resul);
+// Cerrar la conexion
+mysqli_close($link);
+?>
 ?>
 
 

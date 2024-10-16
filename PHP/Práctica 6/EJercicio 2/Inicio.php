@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Menu</title>
 </head>
-<body>
-    <h1>Gestión de Ciudades</h1>
-    <form action="" method="post">
-        <button type="submit" name="action" value="alta">Alta</button>
-        <button type="submit" name="action" value="baja">Baja</button>
-        <button type="submit" name="action" value="modificacion">Modificación</button><br>
-        <button type="submit" name="action" value="listado">Listado sin Paginación</button><br>
-        <button type="submit" name="action" value="listado_paginado">Listado con Paginación</button>
-    </form>
-
-    <?php
-
-    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])){
-        switch ($_POST['action']) {
-            case 'alta':
-                include 'Alta.php';
-                break;
-            case 'baja':
-                include 'Baja.php';
-                break;
-            case 'modificacion':
-                include 'Modificacion.php';
-                break;
-            case 'listado':
-                include 'Listado.php';
-                break;
-            case 'listado_paginado':
-                include 'Listado_paginado.php';
-                break;
-        };
-    };
-    ?>
-
+<body bgcolor="#FFFFFF" text="#000000">
+<p>&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" align="left">
+ <tr>
+ <td>
+ <div align="center">ABM Ciudades</div>
+ </td>
+ </tr>
+ <tr>
+ <td>1- <a href="./Alta/formAlta.html">Alta</a></td>
+ </tr>
+ <tr>
+ <td>2- <a href="./formmod.html">Modificaci&oacute;n</a></td>
+ </tr>
+ <tr>
+ <td>3- <a href="FormBajaIni.html ">Baja</a></td>
+ </tr>
+ <tr>
+ <td>4- <a href="./consulta-listado/consulta.php">Listado Completo</a></td>
+ </tr>
+ <tr>
+ <td>5- <a href="./consulta-listado/listado-pag.php">Listado Completo con Paginación</a></td>
+ </tr>
+</table>
 </body>
 </html>
