@@ -4,7 +4,7 @@
     <title>Error</title>
 </head>
 <body>
-    <h1>El correo ingresado no se encuentra en nuestra base de datos.</h1>
+    <h1>Correo no registrado</h1>
     <a href="formulario.php">Volver</a>
 </body>
 </html>
